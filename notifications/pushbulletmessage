@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -u REPLACE_WITH_YOUR_API_KEY: https://api.pushbullet.com/v2/pushes --header 'Content-Type: application/json' --data-binary '{"type": "note", "title": "'"$1"'", "body": "'"$2"'"}' &>/dev/null
